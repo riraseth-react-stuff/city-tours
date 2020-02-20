@@ -1,9 +1,16 @@
 import React from "react";
 import "./App.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Navbar from "./components/Navbar/Navbar";
+import TourList from "./components/TourList";
 
 function App() {
-  return <h1>application</h1>;
+  return (
+    <React.Fragment>
+      <Navbar></Navbar>
+      <TourList></TourList>
+    </React.Fragment>
+  );
 }
 
 export default App;
